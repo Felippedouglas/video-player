@@ -1,0 +1,343 @@
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.div-erro-carregar-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #181818a6;
+    z-index: 100;
+}
+
+.content-erro-carregar-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    color: #181818;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 350px;
+}
+
+.content-erro-carregar-video h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.content-erro-carregar-video p {
+    font-size: .8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.content-erro-carregar-video button {
+    padding: 7px 10px;
+    background: unset;
+    border: 1px solid #181818;
+    color: #181818;
+    font-weight: 600;
+    border-radius: 50px;
+    margin: 0 5px;
+    font-size: .8rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.content-erro-carregar-video button:hover {
+    background: #ddd;
+}
+
+.bt-voltar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    background: unset;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    padding: 5px 10px;
+    z-index: 9;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.bt-voltar:hover {
+    color: #ccc;
+}
+
+.bt-assistir-tv {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: #fff;
+    color: #181818;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-size: .8rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    z-index: 9;
+    transition: all .3s ease;
+}
+
+.bt-assistir-tv:hover {
+    background: #ccc;
+    transform: scale(1.1);
+}
+
+.loader-assistir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background: #181818;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+
+.div-play-movie {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00f;
+    z-index: 99;
+}
+
+.div-play-movie img {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.div-play-movie div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: #181818c6;
+    width: 100%;
+    height: 100%;
+}
+
+.div-play-movie div button {
+    height: 70px;
+    width: 70px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    border-radius: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.div-play-movie div button:hover {
+    background: #bbb;
+}
+
+.div-play-movie div button i {
+    margin-right: -2px;
+}
+
+.div-player {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: #000;
+}
+
+.section-carregando-video {
+    position: absolute;
+}
+
+.icon-exibir-click-controls {
+    font-size: 2rem;
+    transition: all .3s ease;
+}
+
+.current-time {
+    width: 100%;
+    accent-color: #f00;
+    height: 5px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    border-radius: 0;
+    align-items: center;
+    transition: all .3s ease;
+}
+
+.current-time:hover {
+    height: 10px;
+}
+
+.progress-bar {
+    position: relative;
+    width: 100%;
+}
+
+.hover-time {
+    position: absolute;
+    top: -40px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.div-controls-player {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 50px 50px 40px 50px;
+    background-image: linear-gradient(to top, #000000c6 60%, #00000000);
+    color: #fff;
+    border-radius: 20px 20px 0 0;
+    z-index: 2;
+}
+
+.div-controls-player section {
+    margin-top: 10px;
+}
+
+.button-controls-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    margin: 0 5px;
+    background: unset;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+
+.button-controls-player:hover {
+    background: #fff;
+    color: #181818;
+}
+
+.div-controls-player header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 10px;
+}
+
+.div-controls-player header h2 {
+    font-size: 3rem;
+    margin-left: -5px;
+    margin-bottom: -5px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bt-header-player {
+    padding: 10px 20px;
+    color: #181818;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: .9rem;
+    white-space: nowrap;
+    transition: all .3s ease;
+}
+
+.bt-header-player:hover {
+    background: #ccc;
+}
+
+.span-info-movie {
+    display: flex;
+    width: max-content;
+
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.span-info-movie i {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+.span-minutos-video {
+    margin-left: 13px;
+}
+
+.section-controls-player {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -10px;
+}
+
+.section-controls-player section {
+    display: flex;
+    align-items: center;
+}
+
+.div-player video {
+    width: 100%;
+    height: 100vh;
+}
+
+.div-player video {
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+}
+
+
+@media (max-width: 800px) {
+    .div-controls-player header h2 {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    .bt-header-player {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .div-controls-player {
+        padding: 10px 20px 30px 20px;
+    }
+}
+
+@media (max-height: 450px) {
+    .div-controls-player {
+        padding: 10px 20px 30px 20px;
+    }
+}
